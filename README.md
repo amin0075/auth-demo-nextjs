@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
 
 - Node.js 18.17 or later
 - Docker and Docker Compose
-- pnpm (recommended) or npm
+- npm (recommended) or npm
 
 ## Getting Started
 
@@ -50,7 +50,7 @@ Before you begin, ensure you have the following installed:
 2. **Install dependencies**
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. **Set up environment variables**
@@ -83,27 +83,37 @@ Before you begin, ensure you have the following installed:
 5. **Run database migrations**
 
    - Apply the necessary database migrations using Drizzle:
+
      ```bash
-     pnpm drizzle-kit push:pg
+     npm run db:generate
+     npm run db:migrate
+
      ```
+
    - This will set up the database schema required for the application.
+
+   - You can also view the database using the following command:
+     ```bash
+     npm run db:studio
+     ```
+     - This will open the database in the browser.
 
 6. **Start the development server**
 
    - Run the Next.js development server:
      ```bash
-     pnpm dev
+     npm dev
      ```
    - The application should now be running on `http://localhost:3000`.
 
 7. **Build and run for production**
    - To build the application for production:
      ```bash
-     pnpm build
+     npm build
      ```
    - To start the production server:
      ```bash
-     pnpm start
+     npm start
      ```
 
 ## Docker Compose Configuration
