@@ -1,0 +1,1 @@
+ALTER TABLE "users" RENAME COLUMN "two_factor_enabled" TO "is_verified";
