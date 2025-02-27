@@ -2,7 +2,7 @@
 
 # Next.js Authentication System
 
-A modern authentication system built with Next.js 14, featuring server-side rendering, server actions, and secure user authentication.
+A modern authentication system built with Next.js 15, featuring server-side rendering, server actions, and secure user authentication.
 
 ## Features
 
@@ -19,7 +19,7 @@ A modern authentication system built with Next.js 14, featuring server-side rend
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 15 (App Router)
 - **Database**: PostgreSQL
 - **ORM**: Drizzle ORM
 - **Authentication**: JWT (jose)
